@@ -1,0 +1,39 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5F5;
+  color: #A597CF;
+  box-shadow: 50px 100px #000000;
+  margin-bottom: -13px;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, .4);
+  border-bottom: #8b7d7d7c 2px solid;
+  border-top: #8b7d7d7c 2px solid;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbarContainer h4 {
+  font-family: 'Kurale', serif;
+  font-size: 1.25rem;
+  margin-left: 50px;
+}
+
+.navbarContainer a {
+  text-decoration: none;
+  color: #A597CF;
+  height: 100%;
+  padding-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbarContainer a:hover, .navbarContainer a:focus {
+  border-bottom: #176A5C 3px solid;
+}
+
+.navbarItemContainer {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 50px;
+}
