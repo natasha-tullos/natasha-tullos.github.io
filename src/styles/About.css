@@ -1,0 +1,9 @@
+.aboutContainer {
+  background-color: #8b7d7d7c;
+}
+
+#about {
+  text-align: center;
+  border-bottom: springgreen 10px solid;
+  font-size: 3rem;
+}
