@@ -1,29 +1,58 @@
 import React, { useState } from 'react';
-import Icon from '@material-ui/core/Icon';
-import MenuIcon from '@material-ui/icons/Menu';
+import { 
+  Collapse, 
+  Navbar, 
+  NavbarToggler,
+  Nav, 
+  NavItem,
+  NavbarBrand,
+  NavLink
+} from 'reactstrap';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
+const NavbarWrapper = () => {
+  const [collapsed, setCollapsed] = useState(true);
 
-  console.log(isOpen, ' is open?')
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+  }
 
   return (
     <div className="navbarContainer">
-      {/* <h4><a href="/">Home</a></h4> */}
-      <div>
-        <button className="navButton" type="button" onClick={() => !isOpen ? setOpen(true) : setOpen(false)}>
-          <Icon className="menuIcon">{!isOpen ? 'menu' : 'close'}</Icon>
-        </button>
-        <div className={`navbarItemContainer ${isOpen ? 'visible' : 'closed'}`}>
-          <h4><a href="#about" onClick={() => setOpen(false)}>About</a></h4>
-          <h4><a href="#" onClick={() => setOpen(false)}>Resume</a></h4>
-          <h4><a href="#" onClick={() => setOpen(false)}>Projects</a></h4>
-          <h4><a href="#" onClick={() => setOpen(false)}>Contact</a></h4>
-        </div>
-      </div>
+      <Navbar color="faded" light>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/">
+                <h4>Home</h4>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/about">
+                <h4>About</h4>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/skills">
+                <h4>Skills</h4>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/work">
+                <h4>Experience</h4>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contact">
+                <h4>Contact</h4> 
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
   )
 }
 
-export default Navbar;
+export default NavbarWrapper;
