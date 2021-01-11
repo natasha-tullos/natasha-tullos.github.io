@@ -12,19 +12,19 @@ import '../styles/Resume.css';
 const items = [
   {
     id: 'bright-health',
-    src: 'https://i.maga.host/W0BLUlh.png',
+    src: 'https://i.imgur.com/3SEpvT9.png',
   },
   {
     id: 'chrono',
-    src: 'https://i.maga.host/xd2Vwug.png',
+    src: 'https://i.imgur.com/oNPYVkT.png',
   },
   {
     id: 'headspring',
-    src: 'https://i.maga.host/2aX232r.png',
+    src: 'https://i.imgur.com/0JUcUcc.png',
   },
   {
     id: 'musx',
-    src: 'https://i.maga.host/SqSTzuu.png'
+    src: 'https://i.imgur.com/6tep5oM.png'
   },
 ];
 
