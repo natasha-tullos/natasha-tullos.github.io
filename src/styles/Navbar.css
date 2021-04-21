@@ -1,19 +1,33 @@
 .navbar {
-  position: fixed !important;
-  margin-top: 35px;
-  margin-left: 35px;
+  justify-content: center !important;
   background-color: #fff;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  justify-content: center !important;
+  width: 100%;
+  transition: width .3s ease;
 }
 
 .navbarContainer h4 {
   font-family: 'Kurale', serif;
   font-size: 1.225rem;
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 1.25rem;
 }
 
 @media (max-width: 1024px) {
   .navbar {
     position: relative !important;
+  }
+}
+
+@media(max-width: 800px) {
+  .navbarContainer h4 {
+    font-size: .75rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
