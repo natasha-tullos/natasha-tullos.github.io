@@ -1,0 +1,56 @@
+.contact-container {
+  height: 80vh;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-text {
+  font-weight: normal;
+  line-height: 1.875rem;
+}
+
+.scroll-up-link-btn {
+  margin-top: 50px;
+  padding: 8px;
+  overflow-y: scroll;
+  background: #22223B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 200px;
+}
+
+.scroll-up-link-btn:hover, .button-container a:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-up-link-btn:active, .button-container a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-icon {
+  color: #FAE1DD;
+}
+
+.button-container {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
+.button-container a {
+  padding: 20px;
+  color: #FAE1DD;
+  background-color: #22223B;
+  border-radius: 20px;
+  border: none;
+  width: 176px;
+  text-decoration: none;
+}

@@ -1,0 +1,34 @@
+.home-container {
+  background-color: #FAE1DD;
+  padding: 20px;
+  height: 80vh;
+}
+
+.text-container {
+  width: 60%;
+}
+
+.title, .sub-title {
+  text-align: left;
+}
+
+.title {
+  line-height: 2.938rem;
+}
+
+.sub-title {
+  line-height: 2.188rem;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.image {
+  width: 25%;
+  border-radius: 20px;
+}
+
+.arrow-icon {
+  color: #FAE1DD;
+}

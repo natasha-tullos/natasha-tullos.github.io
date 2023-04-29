@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  background-color: #FAE1DD;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.spacer {
+  width: 100%;
+  height: 95px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 135px;
+  margin-right: 130px;
+}
+
+.title, .sub-title {
+  font-family: 'Kurale', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #22223B;
+}
+
+.text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.406rem;
+  color: #22223B;
+}
+
+.scroll-down-link-btn {
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 8px;
+  overflow-y: scroll;
+  background: #22223B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 200px;
+}
+
+.scroll-down-link-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-down-link-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
