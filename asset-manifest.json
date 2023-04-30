@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-redo/static/css/main.40e831fe.chunk.css",
-    "main.js": "/portfolio-redo/static/js/main.13d9d088.chunk.js",
-    "main.js.map": "/portfolio-redo/static/js/main.13d9d088.chunk.js.map",
-    "runtime-main.js": "/portfolio-redo/static/js/runtime-main.804f27f2.js",
-    "runtime-main.js.map": "/portfolio-redo/static/js/runtime-main.804f27f2.js.map",
-    "static/css/2.2a86faee.chunk.css": "/portfolio-redo/static/css/2.2a86faee.chunk.css",
-    "static/js/2.099974a9.chunk.js": "/portfolio-redo/static/js/2.099974a9.chunk.js",
-    "static/js/2.099974a9.chunk.js.map": "/portfolio-redo/static/js/2.099974a9.chunk.js.map",
+    "main.css": "/portfolio-redo/static/css/main.9afffd72.chunk.css",
+    "main.js": "/portfolio-redo/static/js/main.59e4f3ef.chunk.js",
+    "main.js.map": "/portfolio-redo/static/js/main.59e4f3ef.chunk.js.map",
+    "runtime-main.js": "/portfolio-redo/static/js/runtime-main.5de3ef3b.js",
+    "runtime-main.js.map": "/portfolio-redo/static/js/runtime-main.5de3ef3b.js.map",
+    "static/css/2.b8167fa8.chunk.css": "/portfolio-redo/static/css/2.b8167fa8.chunk.css",
+    "static/js/2.e99e2562.chunk.js": "/portfolio-redo/static/js/2.e99e2562.chunk.js",
+    "static/js/2.e99e2562.chunk.js.map": "/portfolio-redo/static/js/2.e99e2562.chunk.js.map",
     "index.html": "/portfolio-redo/index.html",
-    "precache-manifest.7291bd6d94608c966801caed5886a78c.js": "/portfolio-redo/precache-manifest.7291bd6d94608c966801caed5886a78c.js",
-    "service-worker.js": "/portfolio-redo/service-worker.js",
-    "static/css/2.2a86faee.chunk.css.map": "/portfolio-redo/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.40e831fe.chunk.css.map": "/portfolio-redo/static/css/main.40e831fe.chunk.css.map",
-    "static/js/2.099974a9.chunk.js.LICENSE.txt": "/portfolio-redo/static/js/2.099974a9.chunk.js.LICENSE.txt",
-    "static/media/default.png": "/portfolio-redo/static/media/default.ccf96bb5.png"
+    "static/css/2.b8167fa8.chunk.css.map": "/portfolio-redo/static/css/2.b8167fa8.chunk.css.map",
+    "static/css/main.9afffd72.chunk.css.map": "/portfolio-redo/static/css/main.9afffd72.chunk.css.map",
+    "static/js/2.e99e2562.chunk.js.LICENSE.txt": "/portfolio-redo/static/js/2.e99e2562.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.804f27f2.js",
-    "static/css/2.2a86faee.chunk.css",
-    "static/js/2.099974a9.chunk.js",
-    "static/css/main.40e831fe.chunk.css",
-    "static/js/main.13d9d088.chunk.js"
+    "static/js/runtime-main.5de3ef3b.js",
+    "static/css/2.b8167fa8.chunk.css",
+    "static/js/2.e99e2562.chunk.js",
+    "static/css/main.9afffd72.chunk.css",
+    "static/js/main.59e4f3ef.chunk.js"
   ]
 }
