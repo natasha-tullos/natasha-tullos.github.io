@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="game-area">
+            <img id="player" src="./images/down_walking.gif" alt="Player character facing right"
+                data-face-right="./images/right_walking.gif" data-face-left="./images/left_walking.gif"
+                data-face-up="./images/up_walking.gif" data-face-down="./images/down_walking.gif">
+        </div>
+        <div id="content-area"><!-- Character element -->
+            <header>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Portfolio Logo" id="logo">
+                </div>
+                <nav>
+                    <div class="hamburger" id="hamburger">
+                        &#9776; <!-- Hamburger icon -->
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+                        <li><a href="career.html" class="nav-link" id="career-link">Career</a></li>
+                        <li><a href="skills.html" class="nav-link" id="skills-link">Skills</a></li>
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fredwoodjs7075.logowik.com.webp&f=1&nofb=1&ipt=12a22c68a9ae98fd5f88e6fecd612367ef5ac2f0a0d5823402a5cb4643fb201e&ipo=images"
+                            alt="Redwoodjs Logo">
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foneteamsolutions.in%2Fblogoneteam%2Fwp-content%2Fuploads%2F2020%2F05%2FREACT-JS-KOCHI.png&f=1&nofb=1&ipt=36641404278a2af3c87c2c86126c504fb7dece4b028e192984c38dee8a712138&ipo=images"
+                            alt="React Logo">
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdavidwalsh.name%2Fdemo%2Fgraphql-intro%2Fgraphql.png&f=1&nofb=1&ipt=d73a0e5d3e8cbf691a829d81502152bc2cf8fc133e29a198b14ae0d6389e0c27&ipo=images"
+                            alt="GraphQL Logo">
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.onu.ro%2Fwp%2Fwp-content%2Fuploads%2F2020%2F03%2Freact-native-logo-768x890.png&f=1&nofb=1&ipt=6f1219c15f4320dde7983f0a3cb808b4730d0533536e58b9f0d89b4ac47943ec&ipo=images"
+                            alt="React Native Logo">
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-media-1.freecodecamp.org%2Fimages%2F1*DF0g7bNW5e2z9XS9N2lAiw.jpeg&f=1&nofb=1&ipt=3fd7563dc0aad857ac1eb9c600800b7a855449b56aa63b8076118080abff2270&ipo=images"
+                            alt="Node.js Logo">
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fpython-logo-png-python-logo-png-and-vector-logo-img-4096x4553.png&f=1&nofb=1&ipt=8c4b22a1061d754cc126de7955e8bec560d5007c8e0cf909e541cd1f3efb9159&ipo=images"
+                            alt="Python Logo">
+                    </div>
+                </div>
+                <h3>More skills are listed on my LinkedIn, check it out in the footer!</h3>
+            </section>
+        </div>
+        <div id="mobile-controls">
+            <div class="control-row">
+                <button id="left-btn">←</button>
+                <div class="vertical-controls">
+                    <button id="up-btn">↑</button>
+                    <button id="down-btn">↓</button>
+                </div>
+                <button id="right-btn">→</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Natasha Tullos. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/natasha-tullos/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/natasha-tullos" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
