@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" id="logo">
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+                <li><a href="career.html" class="nav-link" id="career-link">Career</a></li>
+                <li><a href="skills.html" class="nav-link" id="skills-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="game-container">
+        <div id="game-area">
+            <img id="player" src="./images/down_walking.gif" alt="Player character facing right"
+                data-face-right="./images/right_walking.gif" data-face-left="./images/left_walking.gif"
+                data-face-up="./images/up_walking.gif" data-face-down="./images/down_walking.gif">
+        </div>
+        <div id="content-area">
+            <section id="contact">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+        <div id="mobile-controls">
+            <div class="control-row">
+                <button id="left-btn">←</button>
+                <div class="vertical-controls">
+                    <button id="up-btn">↑</button>
+                    <button id="down-btn">↓</button>
+                </div>
+                <button id="right-btn">→</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Natasha Tullos. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/natasha-tullos/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/natasha-tullos" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

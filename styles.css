@@ -1,0 +1,445 @@
+:root {
+    --color-dark-teal: #08605F;
+    --color-cream: #FEFEE3;
+    --color-sage: #7EA087;
+    --color-dark-purple: #2D232E;
+    --color-mauve: #634B66;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-cream);
+    background-image: url('./images/background_image.png'); 
+    background-size: contain;
+    background-position: center;
+
+}
+
+header {
+    position: fixed;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background-color: 'transparent';
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-links {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+}
+
+.nav-links li {
+    margin-left: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: var(--color-cream); 
+    font-size: 16px; 
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-dark-teal); 
+    transition: color 0.3s;
+}
+
+#logo {
+    width: 200px; 
+    height: auto;
+    display: block;
+}
+
+#game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#game-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background-image: url('./images/background_image.png'); 
+    background-size: contain;
+    background-position: center;
+}
+
+#content-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; /* Adjust based on the number of sections */
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#content-area * {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#player {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    z-index: 3;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    pointer-events: auto;
+}
+
+section {
+    background-color: var(--color-mauve);
+    color: var(--color-cream);
+    padding: 4rem;
+    border-radius: 10px;
+    margin: 2rem;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    align-self: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+#contact, #projects, #skills, #about {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 600px; 
+    width: 60%; 
+    margin: 50px auto; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+}
+
+/* Remove margin from the last section to avoid extra space */
+section:last-child {
+    margin-right: 0;
+}
+
+#intro, #skills, #projects, #about, #contact-form,  #testimonials, #career, #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.skills-container {
+    flex-direction: row !important;
+}
+
+h1, h2 {
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-item img {
+    width: 102px;
+    height: 102px;
+    margin: 10px;
+}
+
+#testimonials, #career {
+    max-width: 1000px; /* Increase max width for the testimonials section */
+    width: 90%; /* Full width with some margin */
+    margin: 50px auto; /* Center the section */
+    padding: 20px;
+    background-color: var(--color-mauve); /* Purple background for the testimonials section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center; /* Center text */
+}
+
+#career {
+    margin: 200px auto;
+}
+
+.career-item ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 10px 0; 
+    text-align: left; 
+    flex-direction: column;
+}
+
+.testimonial-container, .project-container, .career-container {
+    max-height: 300px; 
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.testimonial-item, .project-item, .career-item  {
+    margin: 15px 0; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 100%; 
+    max-width: 600px; 
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px; 
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+button {
+    padding: 10px 15px; 
+    background-color: var(--color-sage); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--color-sage); 
+}
+
+.social-links a {
+    margin: 0 10px; 
+    font-size: 24px; 
+    color: var(--color-cream); 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.social-links a:hover {
+    color: var(--color-dark-teal); 
+}
+
+.social-links a:nth-child(2):hover {
+    color: var(--color-dark-teal); 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-cream);
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-controls {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.control-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vertical-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: var(--color-cream);
+    text-align: center;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#mobile-controls button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--color-mauve);
+    color: var(--color-cream);
+    border: none;
+    border-radius: 5px;
+    touch-action: manipulation;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Base styles for the hamburger menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of the hamburger icon */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        background-color: var(--color-mauve); 
+        position: absolute; 
+        top: 60px; 
+        left: 80px; 
+        z-index: 1000; 
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    .nav-links a {
+        color: var(--color-cream); 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        max-width: 90%;
+        padding: 15px;
+        margin-right: 2rem;
+    }
+
+    #mobile-controls {
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Larger heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust paragraph size */
+    }
+
+    #career {
+        margin: 20px; /* Reduce margin on mobile */
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .career-item {
+        margin: 10px 0; /* Reduce space between career items */
+        padding: 10px; /* Reduce padding for each career item */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center navigation links */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between navigation links */
+    }
+
+    #career, #skills {
+        padding: 10px; 
+        max-height: 400px; 
+        overflow-y: auto; 
+    }
+
+    #home, #about, #skills, #projects, #contact {
+        margin: 20px; /* Reduce margin on mobile */
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    #contact {
+        padding: 10px; 
+        max-height: 600px; 
+        overflow-y: auto; 
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+}
