@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Career</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" id="logo">
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+                <li><a href="career.html" class="nav-link" id="career-link">Career</a></li>
+                <li><a href="skills.html" class="nav-link" id="skills-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="game-container">
+        <div id="game-area">
+            <img id="player" src="./images/down_walking.gif" alt="Player character facing right"
+                data-face-right="./images/right_walking.gif" data-face-left="./images/left_walking.gif"
+                data-face-up="./images/up_walking.gif" data-face-down="./images/down_walking.gif">
+        </div>
+        <div id="content-area">
+            <section id="career">
+                <h2>My Career</h2>
+                <p>Here are some of the positions I've held throughout my career:</p>
+                <div class="career-container">
+                    <div class="career-item">
+                        <h3>Full Stack Engineer II at Celero Commerce</h3>
+                        <p>September 2023 - Present</p>
+                        <p>Developing and maintaining web applications using Redwoodjs, GraphQL, and Prisma.</p>
+                    </div>
+                    <div class="career-item">
+                        <h3>React Native Engineer at Babylon Health</h3>
+                        <p>August 2021 - August 2023</p>
+                        <p>Worked on building responsive user interfaces and improving user experiences.</p>
+                        <ul>
+                            <li>Released new features to production with React Native.</li>
+                            <li>Brought up and implemented ideas for improving the architecture of a micro frontend React Native architecture.</li>
+                            <li>Implemented Apollo and GraphQL for creating stub patients for testing API calls and user flows.</li>
+                            <li>Worked on multiple codebases across different teams, creating a big impact across the organization by being able to jump in and help debug issues on other teams.</li>
+                            <li>Improved registration flow for easier onboarding of new users and increasing user sign-ups.</li>
+                            <li>Facilitated a front-end engineering guild meeting for the company where we discussed testing, documentation, and new features the teams were implementing.</li>
+                            <li>Created end-to-end tests using BrowserStack to improve our testing process.</li>
+                            <li>Implemented Redux sagas on the front end for handling registration flows and user information.</li>
+                        </ul>
+                    </div>
+                    <div class="career-item">
+                        <h3>Software Engineer at Babylon Health</h3>
+                        <p>March 2020 - June 2021</p>
+                        <ul>
+                            <li>Implemented connections to Contentful API in C# backend for connecting Contentful models to backend API.</li>
+                            <li>Implemented and closely worked with the design team on new and improved footer and navigation redesign.</li>
+                            <li>Brought up innovative ideas on how to increase diversity within the company, which was then discussed in a company-wide meeting by the leadership team.</li>
+                            <li>Implemented Apollo and GraphQL for displaying data from the content management system in Next.js to improve our marketing website.</li>
+                            <li>Configured Azure B2C connections for improving our login flow.</li>
+                            <li>Deployed React applications in release cycles using Kubernetes and Canary.</li>
+                            <li>Helped interview candidates that were applying to new roles within the company.</li>
+                            <li>Presented new features in company demos to show progress towards company goals.</li>
+                        </ul>
+                    </div>
+                    <div id="mobile-controls">
+                        <div class="control-row">
+                            <button id="left-btn">←</button>
+                            <div class="vertical-controls">
+                                <button id="up-btn">↑</button>
+                                <button id="down-btn">↓</button>
+                            </div>
+                            <button id="right-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+                <h4>Check out my full LinkedIn profile on the footer for more information!</h4>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Natasha Tullos. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/natasha-tullos/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/natasha-tullos" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
